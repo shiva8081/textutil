@@ -8,13 +8,13 @@ function Navbar(props) {
   const [color2] = useState('#ae70a7');
   const [color3] = useState('#a4a120');
   const changecolor1=()=>{
-      props.set(color1)
+       document.body.style.backgroundColor = color1;
   }
   const changecolor2=()=>{
-props.set(color2)
+    document.body.style.backgroundColor = color2;
   }
   const changecolor3=()=>{
-props.set(color3)
+    document.body.style.backgroundColor = color3;
   }
 return (
     <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode} `}>

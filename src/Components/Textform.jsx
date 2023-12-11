@@ -39,9 +39,9 @@ export default function Textform(props) {
       <div className='container'>
         <h1>your text summary</h1>
         <p>{text.split(`/|s+/`).filter((element)=>{return element.length!==0}).length}word and {text.length} character</p>
-        <p>{0.008 * text.split(" ").length} minutes to read</p>
+        <p>{text.length > 0?0.008 * text.split(" ").length:0} minutes to read</p>
         <h2>preview</h2>
-        <p>{text.lenght>0?text:'entre the text to preview'}</p>
+        <p>{text.length > 0?text:'entre the text to preview'}</p>
       </div>
       </div>
     </>
